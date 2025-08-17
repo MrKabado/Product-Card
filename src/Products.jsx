@@ -53,11 +53,15 @@ function Products() {
     }
   ]
   return (
-    <div className='grid grid-cols-3 border gap-5 p-10'>
+    <>
+      <h1 className='m-10 text-3xl text-center font-bold'>Products</h1>
+
+      <div className='grid grid-cols-3 gap-5 p-10'>
       {Product.map((item, index) => (
         <ProductCard key={index} product={item}/>
       ))}
     </div>
+    </>
   )
 }
 
