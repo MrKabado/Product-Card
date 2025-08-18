@@ -1,11 +1,12 @@
 import React from 'react'
-import Button from './Button'
+import Button from './Button' //import button
 
 function ProductCard({product}) {
 
   const alertButton = (product) => {
     alert(product.title)
   }
+
   return (
     <div className='rounded-lg p-5 shadow-[0_0_5px_0_gray] flex flex-col gap-5 justify-between'>
       <div className='flex flex-col gap-2'>

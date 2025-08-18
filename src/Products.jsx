@@ -1,11 +1,12 @@
 import React from 'react'
 import ProductCard from './components/ProductCard'
-import Aulaf3621 from '../public/f3621.jpg'
-import Aulaf75 from '../public/f75.jpg'
-import AttackSharkX11 from '../public/attacksharkx11.jpg'
-import RedDragon from '../public/RedDragon.jpg'
-import RoyalKludge from '../public/RoyalKludge.jpg'
-import RazerMouse from '../public/Razer DeathAdder Essential.jpg'
+
+import Aulaf3621 from './assets/f3621.jpg'
+import Aulaf75 from './assets/f75.jpg'
+import AttackSharkX11 from './assets/attacksharkx11.jpg'
+import RedDragon from './assets/RedDragon.jpg'
+import RoyalKludge from './assets/RoyalKludge.jpg'
+import RazerMouse from './assets/Razer DeathAdder Essential.jpg'
 
 function Products() {
   const Product = [
@@ -57,10 +58,10 @@ function Products() {
       <h1 className='m-10 text-3xl text-center font-bold'>Products</h1>
 
       <div className='grid grid-cols-3 gap-5 p-10'>
-      {Product.map((item, index) => (
-        <ProductCard key={index} product={item}/>
-      ))}
-    </div>
+        {Product.map((item, index) => (
+          <ProductCard key={index} product={item}/>
+        ))}
+      </div>
     </>
   )
 }
